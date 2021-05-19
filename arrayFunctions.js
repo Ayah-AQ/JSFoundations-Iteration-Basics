@@ -8,9 +8,16 @@
  * getOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [1, 3, 5, 7, 9]
  * getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [11, 35, 601, 777, 999]
  */
+numbers = []
 function getOdds(numbers) {
   // Your code here
-}
+ 
+  numbers = numbers.filter(num =>{
+    if (num % 2 !==0) return num });
+  return numbers
+  }
+  console.log(getOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+  console.log(getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]))
 
 /**
  * getEvens(numbers):
@@ -22,9 +29,17 @@ function getOdds(numbers) {
  * getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [2, 4, 6, 8]
  * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
  */
+  numbers =[]
 function getEvens(numbers) {
   // Your code here
-}
+  
+ 
+  numbers = numbers.filter(num =>{
+    if (num % 2 ===0) return num });
+  return numbers
+  }
+console.log(getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]))
+console.log(getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]))
 
 /**
  * countOccurences(x, numbers):
@@ -35,10 +50,15 @@ function getEvens(numbers) {
  * countOccurences(1, [1, 2, 3, 1, 4, 5, 6, 1, 7, 8, 9, 10, 11, 1, 12, 13]) -> 4
  * countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]) -> 3
  */
+ numbers =[]
 function countOccurences(x, numbers) {
   // Your code here
+  let i =0;
+  numbers.forEach(num => {if (num ===  x) i++;});
+  return i;
 }
-
+console.log(countOccurences(1, [1, 2, 3, 1, 4, 5, 6, 1, 7, 8, 9, 10, 11, 1, 12, 13]))
+console.log(countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]))
 /**
  * makeThemDoctors(students):
  * - receives array `students`
@@ -47,9 +67,13 @@ function countOccurences(x, numbers) {
  * e.g.
  * makeThemDoctors(["Ali", "Aseel", "Richard"]) -> ["Dr. Ali", "Dr. Aseel", "Dr. Richard"]
  */
-
+students =[]
 function makeThemDoctors(students) {
   // Your code here
-}
 
+  students = students.map(student => {return "Dr. "+student;
+  });
+  return students
+}
+console.log(makeThemDoctors(["Ali", "Aseel", "Richard"]))
 module.exports = { getOdds, getEvens, countOccurences, makeThemDoctors };

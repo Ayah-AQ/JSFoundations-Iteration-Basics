@@ -8,7 +8,7 @@
  * getOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [1, 3, 5, 7, 9]
  * getOdds([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [11, 35, 601, 777, 999]
  */
-numbers = []
+
 function getOdds(numbers) {
   // Your code here
  
@@ -29,7 +29,7 @@ function getOdds(numbers) {
  * getEvens([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> [2, 4, 6, 8]
  * getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]) -> [52, 14, 56, 888]
  */
-  numbers =[]
+ 
 function getEvens(numbers) {
   // Your code here
   
@@ -50,7 +50,7 @@ console.log(getEvens([11, 35, 52, 14, 56, 601, 777, 888, 999]))
  * countOccurences(1, [1, 2, 3, 1, 4, 5, 6, 1, 7, 8, 9, 10, 11, 1, 12, 13]) -> 4
  * countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]) -> 3
  */
- numbers =[]
+ 
 function countOccurences(x, numbers) {
   // Your code here
   let i =0;
@@ -67,7 +67,7 @@ console.log(countOccurences(52, [11, 35, 52, 14, 56, 601, 52, 777, 888, 999, 52]
  * e.g.
  * makeThemDoctors(["Ali", "Aseel", "Richard"]) -> ["Dr. Ali", "Dr. Aseel", "Dr. Richard"]
  */
-students =[]
+
 function makeThemDoctors(students) {
   // Your code here
 
